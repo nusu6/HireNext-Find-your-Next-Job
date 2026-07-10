@@ -5,6 +5,7 @@ frontend/build/
 # Backend
 backend/node_modules/
 backend/.env
+backend/config/firebase.js
 
 # Logs
 *.log
