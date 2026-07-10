@@ -40,8 +40,8 @@ function Dashboard() {
   const [userName, setUserName] = useState("");
   const [recentActivities, setRecentActivities] = useState([]);
   const [loading, setLoading] = useState(true);
-  //const [rawApplications, setRawApplications] = useState([]);
-
+  // eslint-disable-next-line no-unused-vars
+const [rawApplications, setRawApplications] = useState([]);
   // Application process analytics pipeline
   const [statusBreakdown, setStatusBreakdown] = useState({
     pending: 0,
