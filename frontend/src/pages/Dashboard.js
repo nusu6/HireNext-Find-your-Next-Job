@@ -40,7 +40,7 @@ function Dashboard() {
   const [userName, setUserName] = useState("");
   const [recentActivities, setRecentActivities] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [rawApplications, setRawApplications] = useState([]);
+  //const [rawApplications, setRawApplications] = useState([]);
 
   // Application process analytics pipeline
   const [statusBreakdown, setStatusBreakdown] = useState({
