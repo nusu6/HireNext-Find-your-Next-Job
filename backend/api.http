@@ -1,0 +1,26 @@
+### Global Variables
+@baseUrl = http://localhost:5000
+
+### 1. Test the Base Route (Public)
+GET {{baseUrl}}/
+Accept: application/json
+
+###
+
+### 2. Get All Jobs (Public)
+GET {{baseUrl}}/api/jobs/all
+Accept: application/json
+
+###
+
+### 3. Apply for a Job WITHOUT a Token (Should Fail with 401)
+POST {{baseUrl}}/api/jobs/apply/1
+Content-Type: application/json
+
+###
+
+### 4. Apply for a Job WITH a Token (Example Format)
+# Note: You will replace 'YOUR_MOCK_TOKEN' with an actual Firebase ID Token later.
+POST {{baseUrl}}/api/jobs/apply/1
+Authorization: Bearer YOUR_MOCK_TOKEN
+Content-Type: application/json
